@@ -821,6 +821,10 @@ transition-property: box-shadow;
     position: relative;
     width: 360px;
 }
+
+.modal-field {
+    margin-bottom: 8px;
+}
 .modal-input {
     border: 1px solid rgba(46, 47, 66, 0.4);
     border-radius: 4px;
@@ -828,6 +832,14 @@ transition-property: box-shadow;
     width: 100%;
     padding-left: 38px;
     outline: transparent;
+}
+
+.modal-input::placeholder {
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 1.17;
+    letter-spacing: 0.04em;
+    color: rgba(46, 47, 66, 0.4);
 }
 
 .input-text {
@@ -877,7 +889,6 @@ transition-property: box-shadow;
     outline: transparent;
     resize: none;
     border: 1px solid rgba(46, 47, 66, 0.4);
-    margin-bottom: 16px;
 }
 
 .modal-textarea::placeholder {
@@ -885,8 +896,11 @@ transition-property: box-shadow;
     font-size: 12px;
     line-height: 1.17;
     letter-spacing: 0.04em;
-    left: 16px;
     color: rgba(46, 47, 66, 0.4);
+}
+
+.modal-field-check {
+    margin-top: 16px; 
 }
 
 .check-text {
