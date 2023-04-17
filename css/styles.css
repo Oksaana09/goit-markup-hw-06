@@ -505,7 +505,14 @@ body {
 
 .footer-container {
     display: flex;
-    gap: 120px;
+}
+
+.footer-box {
+    margin-right: 120px;
+}
+
+.footer-box-social {
+    margin-right: 80px;
 }
 
 .footer-title {
@@ -551,6 +558,11 @@ body {
 
 .footer-soc-icon {}
 
+.footer-form {
+    display: flex;
+    align-items: center;
+}
+
 
 .footer-input {
     border: 1px solid #FFFFFF;
@@ -558,6 +570,8 @@ body {
     border-radius: 4px;
     background: #2E2F42;
     padding: 8px 16px;
+    width: 264px;
+    height: 40px;
     outline: transparent;
     margin-right: 24px;
     transition: border var(--time-transition-duration) 
@@ -588,6 +602,7 @@ body {
     text-align: center;
     color: #FFFFFF;
     padding: 8px 24px;
+    width: 165px;
     background-color: #4D5AE5;
     border-radius: 4px;
     border: none;
@@ -746,7 +761,6 @@ transition-property: box-shadow;
     transform: translate(-50%, -50%) scale(1);
     transition: transform var(--time-transition-duration) var(--transition-timing-function);
     min-width: 408px;
-    height: 576px;
     padding: 72px 24px 24px;
     background:  #FFFFFF;;
     border: none;
@@ -756,7 +770,7 @@ transition-property: box-shadow;
     border-radius: 4px;
 }
 
- .modal-close-btn {
+.modal-close-btn {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -817,7 +831,7 @@ transition-property: box-shadow;
 }
 
 .input-text {
-    display: inline-block;
+    display: block;
     font-weight: 400;
     font-size: 12px;
     line-height: 1.17;
@@ -827,8 +841,6 @@ transition-property: box-shadow;
 }
 
 .form-grop {
-    display: flex;
-    flex-direction: column;
     margin-bottom: 8px;
     position: relative;
 }
@@ -839,6 +851,7 @@ transition-property: box-shadow;
     position: absolute;
     left: 16px;
     top: 50%;
+    fill: var(--logo-color);
     transform: translateY(-50%);
     transition: fill var(--time-transition-duration) 
                      var(--transition-timing-function),
@@ -847,7 +860,7 @@ transition-property: box-shadow;
 }
 
 .modal-input:focus,
- .modal-textarea:focus {
+.modal-textarea:focus {
     border: 1px solid #4D5AE5;
 }
 
@@ -856,10 +869,15 @@ transition-property: box-shadow;
 }
 
 .modal-textarea {
+    display: block;
     height: 120px;
+    width: 360px;
     border-radius: 4px;
+    padding: 8px 16px;
     outline: transparent;
     resize: none;
+    border: 1px solid rgba(46, 47, 66, 0.4);
+    margin-bottom: 16px;
 }
 
 .modal-textarea::placeholder {
@@ -867,6 +885,7 @@ transition-property: box-shadow;
     font-size: 12px;
     line-height: 1.17;
     letter-spacing: 0.04em;
+    left: 16px;
     color: rgba(46, 47, 66, 0.4);
 }
 
@@ -898,6 +917,12 @@ transition-property: box-shadow;
     fill: #F4F4FD;
 }
 
+.privacy {
+    line-height: 1.33;
+    color: var(--second-color);
+    margin: 2px;
+}
+
 .modal-btn {
     background-color: var(--second-color);
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
@@ -912,7 +937,8 @@ transition-property: box-shadow;
     font-size: 16px;
     line-height: 1.5;
     letter-spacing: 0.04em;
-     color: #FFFFFF;
+    color: #FFFFFF;
+    border: none;
     transition: background-color var(--time-transition-duration) var(--transition-timing-function);
     }
 
